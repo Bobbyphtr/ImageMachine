@@ -9,23 +9,37 @@
 /* Begin PBXBuildFile section */
 		9359E93C26B3B770006FDB22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E93B26B3B770006FDB22 /* AppDelegate.swift */; };
 		9359E93E26B3B770006FDB22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E93D26B3B770006FDB22 /* SceneDelegate.swift */; };
-		9359E94026B3B770006FDB22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E93F26B3B770006FDB22 /* ViewController.swift */; };
+		9359E94026B3B770006FDB22 /* MachineListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E93F26B3B770006FDB22 /* MachineListController.swift */; };
 		9359E94326B3B770006FDB22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9359E94126B3B770006FDB22 /* Main.storyboard */; };
 		9359E94626B3B770006FDB22 /* ImageMachine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9359E94426B3B770006FDB22 /* ImageMachine.xcdatamodeld */; };
 		9359E94826B3B771006FDB22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9359E94726B3B771006FDB22 /* Assets.xcassets */; };
 		9359E94B26B3B771006FDB22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9359E94926B3B771006FDB22 /* LaunchScreen.storyboard */; };
+		9359E95726B3B9C3006FDB22 /* StoryboardedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E95626B3B9C3006FDB22 /* StoryboardedExtension.swift */; };
+		9359E95A26B3D1BC006FDB22 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E95926B3D1BC006FDB22 /* AppCoordinator.swift */; };
+		9359E95C26B3D1C4006FDB22 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E95B26B3D1C4006FDB22 /* Coordinator.swift */; };
+		9359E96026B3DB13006FDB22 /* MachineListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E95F26B3DB13006FDB22 /* MachineListTableViewCell.swift */; };
+		9359E96426B3DBBE006FDB22 /* MachineListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96326B3DBBE006FDB22 /* MachineListDataModel.swift */; };
+		9359E96626B3DBFC006FDB22 /* MachineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96526B3DBFC006FDB22 /* MachineListViewModel.swift */; };
+		9359E96926B3F82C006FDB22 /* ImageMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96826B3F82C006FDB22 /* ImageMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9359E93826B3B770006FDB22 /* ImageMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9359E93B26B3B770006FDB22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9359E93D26B3B770006FDB22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9359E93F26B3B770006FDB22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9359E93F26B3B770006FDB22 /* MachineListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListController.swift; sourceTree = "<group>"; };
 		9359E94226B3B770006FDB22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9359E94526B3B770006FDB22 /* ImageMachine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageMachine.xcdatamodel; sourceTree = "<group>"; };
 		9359E94726B3B771006FDB22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9359E94A26B3B771006FDB22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9359E94C26B3B771006FDB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9359E95626B3B9C3006FDB22 /* StoryboardedExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardedExtension.swift; sourceTree = "<group>"; };
+		9359E95926B3D1BC006FDB22 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9359E95B26B3D1C4006FDB22 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9359E95F26B3DB13006FDB22 /* MachineListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListTableViewCell.swift; sourceTree = "<group>"; };
+		9359E96326B3DBBE006FDB22 /* MachineListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListDataModel.swift; sourceTree = "<group>"; };
+		9359E96526B3DBFC006FDB22 /* MachineListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListViewModel.swift; sourceTree = "<group>"; };
+		9359E96826B3F82C006FDB22 /* ImageMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,95 @@
 		9359E93A26B3B770006FDB22 /* ImageMachine */ = {
 			isa = PBXGroup;
 			children = (
-				9359E93B26B3B770006FDB22 /* AppDelegate.swift */,
-				9359E93D26B3B770006FDB22 /* SceneDelegate.swift */,
-				9359E93F26B3B770006FDB22 /* ViewController.swift */,
-				9359E94126B3B770006FDB22 /* Main.storyboard */,
-				9359E94726B3B771006FDB22 /* Assets.xcassets */,
-				9359E94926B3B771006FDB22 /* LaunchScreen.storyboard */,
-				9359E94C26B3B771006FDB22 /* Info.plist */,
-				9359E94426B3B770006FDB22 /* ImageMachine.xcdatamodeld */,
+				9359E95226B3B870006FDB22 /* Application */,
+				9359E95326B3B87C006FDB22 /* Modules */,
+				9359E95826B3BA36006FDB22 /* Services */,
+				9359E95526B3B893006FDB22 /* Helpers */,
+				9359E95426B3B886006FDB22 /* Supports */,
 			);
 			path = ImageMachine;
+			sourceTree = "<group>";
+		};
+		9359E95226B3B870006FDB22 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9359E93B26B3B770006FDB22 /* AppDelegate.swift */,
+				9359E93D26B3B770006FDB22 /* SceneDelegate.swift */,
+				9359E95926B3D1BC006FDB22 /* AppCoordinator.swift */,
+				9359E94926B3B771006FDB22 /* LaunchScreen.storyboard */,
+				9359E94C26B3B771006FDB22 /* Info.plist */,
+				9359E94726B3B771006FDB22 /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9359E95326B3B87C006FDB22 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9359E96726B3F817006FDB22 /* Model */,
+				9359E96126B3DBA4006FDB22 /* DataModel */,
+				9359E96226B3DBB4006FDB22 /* ViewModel */,
+				9359E95D26B3DADF006FDB22 /* Views */,
+				9359E93F26B3B770006FDB22 /* MachineListController.swift */,
+				9359E94126B3B770006FDB22 /* Main.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9359E95426B3B886006FDB22 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				9359E95B26B3D1C4006FDB22 /* Coordinator.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		9359E95526B3B893006FDB22 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9359E95626B3B9C3006FDB22 /* StoryboardedExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9359E95826B3BA36006FDB22 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9359E94426B3B770006FDB22 /* ImageMachine.xcdatamodeld */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9359E95D26B3DADF006FDB22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9359E95F26B3DB13006FDB22 /* MachineListTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9359E96126B3DBA4006FDB22 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9359E96326B3DBBE006FDB22 /* MachineListDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		9359E96226B3DBB4006FDB22 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9359E96526B3DBFC006FDB22 /* MachineListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9359E96726B3F817006FDB22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9359E96826B3F82C006FDB22 /* ImageMachine.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +233,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9359E94026B3B770006FDB22 /* ViewController.swift in Sources */,
+				9359E95A26B3D1BC006FDB22 /* AppCoordinator.swift in Sources */,
+				9359E94026B3B770006FDB22 /* MachineListController.swift in Sources */,
 				9359E94626B3B770006FDB22 /* ImageMachine.xcdatamodeld in Sources */,
 				9359E93C26B3B770006FDB22 /* AppDelegate.swift in Sources */,
+				9359E95726B3B9C3006FDB22 /* StoryboardedExtension.swift in Sources */,
+				9359E96926B3F82C006FDB22 /* ImageMachine.swift in Sources */,
+				9359E96026B3DB13006FDB22 /* MachineListTableViewCell.swift in Sources */,
+				9359E96626B3DBFC006FDB22 /* MachineListViewModel.swift in Sources */,
 				9359E93E26B3B770006FDB22 /* SceneDelegate.swift in Sources */,
+				9359E96426B3DBBE006FDB22 /* MachineListDataModel.swift in Sources */,
+				9359E95C26B3D1C4006FDB22 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +392,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85879C62RU;
-				INFOPLIST_FILE = ImageMachine/Info.plist;
+				INFOPLIST_FILE = ImageMachine/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85879C62RU;
-				INFOPLIST_FILE = ImageMachine/Info.plist;
+				INFOPLIST_FILE = ImageMachine/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
