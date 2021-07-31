@@ -23,6 +23,8 @@ struct MachineDetailSwiftUI: View {
     @State private var type : String = "this is a type"
     @State private var qrCodeNumber : String = "987654321"
     
+    @EnvironmentObject var machineModel : MachineDetailsObservable
+    
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -86,7 +88,7 @@ struct MachineDetailSwiftUI: View {
                 }
                 Spacer()
             })
-            .navigationTitle("Machine 1")
+            .navigationTitle("\(machineModel.machineData)")
             .navigationViewStyle(DefaultNavigationViewStyle())
             
         })
@@ -95,6 +97,9 @@ struct MachineDetailSwiftUI: View {
     
 }
 
+class MachineDetailsObservable : ObservableObject {
+    @Published var machineData = ""
+}
 
 struct MachineDetailSwiftUI_Previews: PreviewProvider {
     static var previews: some View {

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class AppCoordinator : Coordinator {
     
@@ -35,6 +36,11 @@ extension AppCoordinator : MachineListRoutes {
     
     func goToMachineDetail(machine : String) {
         print("Go to Machine Detail \(machine)")
+        let model = MachineDetailsObservable.init()
+        model.machineData = machine
+        let view = MachineDetailSwiftUI().environmentObject(model)
+        let vc = UIHostingController(rootView: view)
+        navigationController.pushViewController(vc, animated: true)
     }
     
     
