@@ -21,6 +21,7 @@
 		9359E96426B3DBBE006FDB22 /* MachineListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96326B3DBBE006FDB22 /* MachineListDataModel.swift */; };
 		9359E96626B3DBFC006FDB22 /* MachineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96526B3DBFC006FDB22 /* MachineListViewModel.swift */; };
 		9359E96926B3F82C006FDB22 /* ImageMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96826B3F82C006FDB22 /* ImageMachine.swift */; };
+		9359E96B26B52A47006FDB22 /* MachineDetailSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96A26B52A47006FDB22 /* MachineDetailSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9359E96326B3DBBE006FDB22 /* MachineListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListDataModel.swift; sourceTree = "<group>"; };
 		9359E96526B3DBFC006FDB22 /* MachineListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListViewModel.swift; sourceTree = "<group>"; };
 		9359E96826B3F82C006FDB22 /* ImageMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMachine.swift; sourceTree = "<group>"; };
+		9359E96A26B52A47006FDB22 /* MachineDetailSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineDetailSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9359E95F26B3DB13006FDB22 /* MachineListTableViewCell.swift */,
+				9359E96A26B52A47006FDB22 /* MachineDetailSwiftUI.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				9359E94026B3B770006FDB22 /* MachineListController.swift in Sources */,
 				9359E94626B3B770006FDB22 /* ImageMachine.xcdatamodeld in Sources */,
 				9359E93C26B3B770006FDB22 /* AppDelegate.swift in Sources */,
+				9359E96B26B52A47006FDB22 /* MachineDetailSwiftUI.swift in Sources */,
 				9359E95726B3B9C3006FDB22 /* StoryboardedExtension.swift in Sources */,
 				9359E96926B3F82C006FDB22 /* ImageMachine.swift in Sources */,
 				9359E96026B3DB13006FDB22 /* MachineListTableViewCell.swift in Sources */,
