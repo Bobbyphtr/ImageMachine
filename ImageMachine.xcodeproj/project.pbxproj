@@ -3,34 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931782F626B677AB0067155F /* MachineImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931782F526B677AB0067155F /* MachineImageService.swift */; };
+		931782FA26B67A7E0067155F /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931782F926B67A7E0067155F /* LocalStorageManager.swift */; };
+		931782FC26B67D5D0067155F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931782FB26B67D5D0067155F /* RealmManager.swift */; };
+		931782FE26B682B50067155F /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931782FD26B682B50067155F /* ImageCell.swift */; };
+		9317830026B696530067155F /* ScanQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931782FF26B696530067155F /* ScanQRCodeViewController.swift */; };
+		9317830226B6967A0067155F /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9317830126B6967A0067155F /* ScanViewModel.swift */; };
 		9359E93C26B3B770006FDB22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E93B26B3B770006FDB22 /* AppDelegate.swift */; };
 		9359E93E26B3B770006FDB22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E93D26B3B770006FDB22 /* SceneDelegate.swift */; };
 		9359E94026B3B770006FDB22 /* MachineListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E93F26B3B770006FDB22 /* MachineListController.swift */; };
 		9359E94326B3B770006FDB22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9359E94126B3B770006FDB22 /* Main.storyboard */; };
-		9359E94626B3B770006FDB22 /* ImageMachine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9359E94426B3B770006FDB22 /* ImageMachine.xcdatamodeld */; };
 		9359E94826B3B771006FDB22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9359E94726B3B771006FDB22 /* Assets.xcassets */; };
 		9359E94B26B3B771006FDB22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9359E94926B3B771006FDB22 /* LaunchScreen.storyboard */; };
 		9359E95726B3B9C3006FDB22 /* StoryboardedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E95626B3B9C3006FDB22 /* StoryboardedExtension.swift */; };
 		9359E95A26B3D1BC006FDB22 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E95926B3D1BC006FDB22 /* AppCoordinator.swift */; };
 		9359E95C26B3D1C4006FDB22 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E95B26B3D1C4006FDB22 /* Coordinator.swift */; };
 		9359E96026B3DB13006FDB22 /* MachineListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E95F26B3DB13006FDB22 /* MachineListTableViewCell.swift */; };
-		9359E96426B3DBBE006FDB22 /* MachineListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96326B3DBBE006FDB22 /* MachineListDataModel.swift */; };
 		9359E96626B3DBFC006FDB22 /* MachineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96526B3DBFC006FDB22 /* MachineListViewModel.swift */; };
 		9359E96926B3F82C006FDB22 /* ImageMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96826B3F82C006FDB22 /* ImageMachine.swift */; };
 		9359E96B26B52A47006FDB22 /* MachineDetailSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359E96A26B52A47006FDB22 /* MachineDetailSwiftUI.swift */; };
+		93872DEA26BADC35001586D3 /* MachineListViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93872DE926BADC35001586D3 /* MachineListViewData.swift */; };
+		9398A00C26B78FE10013065D /* EditDetailSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398A00B26B78FE10013065D /* EditDetailSwiftUI.swift */; };
+		9398A00E26B793BA0013065D /* MachineDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398A00D26B793BA0013065D /* MachineDetailViewModel.swift */; };
+		9398A01126B7B0B30013065D /* AddMachineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398A01026B7B0B30013065D /* AddMachineViewController.swift */; };
+		9398A01326B7B5A70013065D /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398A01226B7B5A70013065D /* ImageCollectionViewCell.swift */; };
+		9398A01526B7E6650013065D /* AddMachineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398A01426B7E6650013065D /* AddMachineViewModel.swift */; };
+		9398A01726B80B6A0013065D /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398A01626B80B6A0013065D /* UIImageExtension.swift */; };
+		93ACE3DD26B946CF00089417 /* ImagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE3DB26B946CF00089417 /* ImagePopupViewController.swift */; };
+		93ACE3DE26B946CF00089417 /* ImagePopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93ACE3DC26B946CF00089417 /* ImagePopupViewController.xib */; };
+		93ACE3E026B9A3E600089417 /* EditMachineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACE3DF26B9A3E600089417 /* EditMachineViewModel.swift */; };
+		DBFAAA80C98A23814122BB95 /* Pods_ImageMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37D46AB6B4612F767C56ADF /* Pods_ImageMachine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B882BD2E5D98306280DAF1B /* Pods-ImageMachine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageMachine.release.xcconfig"; path = "Target Support Files/Pods-ImageMachine/Pods-ImageMachine.release.xcconfig"; sourceTree = "<group>"; };
+		931782F526B677AB0067155F /* MachineImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineImageService.swift; sourceTree = "<group>"; };
+		931782F926B67A7E0067155F /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		931782FB26B67D5D0067155F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		931782FD26B682B50067155F /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		931782FF26B696530067155F /* ScanQRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRCodeViewController.swift; sourceTree = "<group>"; };
+		9317830126B6967A0067155F /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
 		9359E93826B3B770006FDB22 /* ImageMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9359E93B26B3B770006FDB22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9359E93D26B3B770006FDB22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9359E93F26B3B770006FDB22 /* MachineListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListController.swift; sourceTree = "<group>"; };
 		9359E94226B3B770006FDB22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9359E94526B3B770006FDB22 /* ImageMachine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageMachine.xcdatamodel; sourceTree = "<group>"; };
 		9359E94726B3B771006FDB22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9359E94A26B3B771006FDB22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9359E94C26B3B771006FDB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,10 +59,21 @@
 		9359E95926B3D1BC006FDB22 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		9359E95B26B3D1C4006FDB22 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		9359E95F26B3DB13006FDB22 /* MachineListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListTableViewCell.swift; sourceTree = "<group>"; };
-		9359E96326B3DBBE006FDB22 /* MachineListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListDataModel.swift; sourceTree = "<group>"; };
 		9359E96526B3DBFC006FDB22 /* MachineListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListViewModel.swift; sourceTree = "<group>"; };
 		9359E96826B3F82C006FDB22 /* ImageMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMachine.swift; sourceTree = "<group>"; };
 		9359E96A26B52A47006FDB22 /* MachineDetailSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineDetailSwiftUI.swift; sourceTree = "<group>"; };
+		93872DE926BADC35001586D3 /* MachineListViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineListViewData.swift; sourceTree = "<group>"; };
+		9398A00B26B78FE10013065D /* EditDetailSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDetailSwiftUI.swift; sourceTree = "<group>"; };
+		9398A00D26B793BA0013065D /* MachineDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineDetailViewModel.swift; sourceTree = "<group>"; };
+		9398A01026B7B0B30013065D /* AddMachineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMachineViewController.swift; sourceTree = "<group>"; };
+		9398A01226B7B5A70013065D /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		9398A01426B7E6650013065D /* AddMachineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMachineViewModel.swift; sourceTree = "<group>"; };
+		9398A01626B80B6A0013065D /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		93ACE3DB26B946CF00089417 /* ImagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePopupViewController.swift; sourceTree = "<group>"; };
+		93ACE3DC26B946CF00089417 /* ImagePopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePopupViewController.xib; sourceTree = "<group>"; };
+		93ACE3DF26B9A3E600089417 /* EditMachineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMachineViewModel.swift; sourceTree = "<group>"; };
+		E37D46AB6B4612F767C56ADF /* Pods_ImageMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD954070135772A83F3F7A8A /* Pods-ImageMachine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageMachine.debug.xcconfig"; path = "Target Support Files/Pods-ImageMachine/Pods-ImageMachine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +81,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFAAA80C98A23814122BB95 /* Pods_ImageMachine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26FDE6EE8326CCCEE909A839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E37D46AB6B4612F767C56ADF /* Pods_ImageMachine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38AD18C2740D90097F0ABCC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD954070135772A83F3F7A8A /* Pods-ImageMachine.debug.xcconfig */,
+				1B882BD2E5D98306280DAF1B /* Pods-ImageMachine.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		931782F726B6785D0067155F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		931782F826B67A650067155F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				931782F926B67A7E0067155F /* LocalStorageManager.swift */,
+				931782FB26B67D5D0067155F /* RealmManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		9359E92F26B3B770006FDB22 = {
 			isa = PBXGroup;
 			children = (
 				9359E93A26B3B770006FDB22 /* ImageMachine */,
 				9359E93926B3B770006FDB22 /* Products */,
+				38AD18C2740D90097F0ABCC5 /* Pods */,
+				26FDE6EE8326CCCEE909A839 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				9359E95226B3B870006FDB22 /* Application */,
+				9359E96726B3F817006FDB22 /* Model */,
+				931782F726B6785D0067155F /* Constants */,
 				9359E95326B3B87C006FDB22 /* Modules */,
 				9359E95826B3BA36006FDB22 /* Services */,
 				9359E95526B3B893006FDB22 /* Helpers */,
@@ -99,11 +169,9 @@
 		9359E95326B3B87C006FDB22 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9359E96726B3F817006FDB22 /* Model */,
-				9359E96126B3DBA4006FDB22 /* DataModel */,
-				9359E96226B3DBB4006FDB22 /* ViewModel */,
-				9359E95D26B3DADF006FDB22 /* Views */,
-				9359E93F26B3B770006FDB22 /* MachineListController.swift */,
+				9398A00926B789A40013065D /* MachineDetail */,
+				9398A00826B789930013065D /* Scan */,
+				9398A00626B789720013065D /* MachineList */,
 				9359E94126B3B770006FDB22 /* Main.storyboard */,
 			);
 			path = Modules;
@@ -113,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				9359E95B26B3D1C4006FDB22 /* Coordinator.swift */,
+				93ACE3DB26B946CF00089417 /* ImagePopupViewController.swift */,
+				93ACE3DC26B946CF00089417 /* ImagePopupViewController.xib */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -121,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				9359E95626B3B9C3006FDB22 /* StoryboardedExtension.swift */,
+				9398A01626B80B6A0013065D /* UIImageExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -128,7 +199,8 @@
 		9359E95826B3BA36006FDB22 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9359E94426B3B770006FDB22 /* ImageMachine.xcdatamodeld */,
+				931782F826B67A650067155F /* Utilities */,
+				931782F526B677AB0067155F /* MachineImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -136,26 +208,9 @@
 		9359E95D26B3DADF006FDB22 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9359E95F26B3DB13006FDB22 /* MachineListTableViewCell.swift */,
-				9359E96A26B52A47006FDB22 /* MachineDetailSwiftUI.swift */,
+				931782FD26B682B50067155F /* ImageCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		9359E96126B3DBA4006FDB22 /* DataModel */ = {
-			isa = PBXGroup;
-			children = (
-				9359E96326B3DBBE006FDB22 /* MachineListDataModel.swift */,
-			);
-			path = DataModel;
-			sourceTree = "<group>";
-		};
-		9359E96226B3DBB4006FDB22 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				9359E96526B3DBFC006FDB22 /* MachineListViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9359E96726B3F817006FDB22 /* Model */ = {
@@ -166,6 +221,65 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9398A00626B789720013065D /* MachineList */ = {
+			isa = PBXGroup;
+			children = (
+				9398A00A26B789B70013065D /* Views */,
+				9398A00726B7897D0013065D /* ViewModel */,
+				9359E93F26B3B770006FDB22 /* MachineListController.swift */,
+				9398A01026B7B0B30013065D /* AddMachineViewController.swift */,
+			);
+			path = MachineList;
+			sourceTree = "<group>";
+		};
+		9398A00726B7897D0013065D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9359E96526B3DBFC006FDB22 /* MachineListViewModel.swift */,
+				9398A01426B7E6650013065D /* AddMachineViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9398A00826B789930013065D /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				9317830126B6967A0067155F /* ScanViewModel.swift */,
+				931782FF26B696530067155F /* ScanQRCodeViewController.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		9398A00926B789A40013065D /* MachineDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9398A00F26B793BE0013065D /* ViewModel */,
+				9359E95D26B3DADF006FDB22 /* Views */,
+				9398A00B26B78FE10013065D /* EditDetailSwiftUI.swift */,
+				9359E96A26B52A47006FDB22 /* MachineDetailSwiftUI.swift */,
+			);
+			path = MachineDetail;
+			sourceTree = "<group>";
+		};
+		9398A00A26B789B70013065D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9359E95F26B3DB13006FDB22 /* MachineListTableViewCell.swift */,
+				9398A01226B7B5A70013065D /* ImageCollectionViewCell.swift */,
+				93872DE926BADC35001586D3 /* MachineListViewData.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9398A00F26B793BE0013065D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9398A00D26B793BA0013065D /* MachineDetailViewModel.swift */,
+				93ACE3DF26B9A3E600089417 /* EditMachineViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9359E94F26B3B771006FDB22 /* Build configuration list for PBXNativeTarget "ImageMachine" */;
 			buildPhases = (
+				8690BAE30B3AA3DAF40B5FF5 /* [CP] Check Pods Manifest.lock */,
 				9359E93426B3B770006FDB22 /* Sources */,
 				9359E93526B3B770006FDB22 /* Frameworks */,
 				9359E93626B3B770006FDB22 /* Resources */,
+				EC9483722EBB01A29783F293 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,10 +342,53 @@
 				9359E94B26B3B771006FDB22 /* LaunchScreen.storyboard in Resources */,
 				9359E94826B3B771006FDB22 /* Assets.xcassets in Resources */,
 				9359E94326B3B770006FDB22 /* Main.storyboard in Resources */,
+				93ACE3DE26B946CF00089417 /* ImagePopupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8690BAE30B3AA3DAF40B5FF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageMachine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC9483722EBB01A29783F293 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageMachine/Pods-ImageMachine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageMachine/Pods-ImageMachine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageMachine/Pods-ImageMachine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9359E93426B3B770006FDB22 /* Sources */ = {
@@ -237,17 +396,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				9359E95A26B3D1BC006FDB22 /* AppCoordinator.swift in Sources */,
+				9398A00E26B793BA0013065D /* MachineDetailViewModel.swift in Sources */,
 				9359E94026B3B770006FDB22 /* MachineListController.swift in Sources */,
-				9359E94626B3B770006FDB22 /* ImageMachine.xcdatamodeld in Sources */,
+				931782FC26B67D5D0067155F /* RealmManager.swift in Sources */,
 				9359E93C26B3B770006FDB22 /* AppDelegate.swift in Sources */,
 				9359E96B26B52A47006FDB22 /* MachineDetailSwiftUI.swift in Sources */,
 				9359E95726B3B9C3006FDB22 /* StoryboardedExtension.swift in Sources */,
 				9359E96926B3F82C006FDB22 /* ImageMachine.swift in Sources */,
 				9359E96026B3DB13006FDB22 /* MachineListTableViewCell.swift in Sources */,
 				9359E96626B3DBFC006FDB22 /* MachineListViewModel.swift in Sources */,
+				9398A01126B7B0B30013065D /* AddMachineViewController.swift in Sources */,
+				93ACE3DD26B946CF00089417 /* ImagePopupViewController.swift in Sources */,
+				93ACE3E026B9A3E600089417 /* EditMachineViewModel.swift in Sources */,
 				9359E93E26B3B770006FDB22 /* SceneDelegate.swift in Sources */,
-				9359E96426B3DBBE006FDB22 /* MachineListDataModel.swift in Sources */,
 				9359E95C26B3D1C4006FDB22 /* Coordinator.swift in Sources */,
+				9317830026B696530067155F /* ScanQRCodeViewController.swift in Sources */,
+				931782F626B677AB0067155F /* MachineImageService.swift in Sources */,
+				9398A01726B80B6A0013065D /* UIImageExtension.swift in Sources */,
+				931782FA26B67A7E0067155F /* LocalStorageManager.swift in Sources */,
+				93872DEA26BADC35001586D3 /* MachineListViewData.swift in Sources */,
+				931782FE26B682B50067155F /* ImageCell.swift in Sources */,
+				9398A01526B7E6650013065D /* AddMachineViewModel.swift in Sources */,
+				9398A01326B7B5A70013065D /* ImageCollectionViewCell.swift in Sources */,
+				9398A00C26B78FE10013065D /* EditDetailSwiftUI.swift in Sources */,
+				9317830226B6967A0067155F /* ScanViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +563,7 @@
 		};
 		9359E95026B3B771006FDB22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD954070135772A83F3F7A8A /* Pods-ImageMachine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -410,6 +583,7 @@
 		};
 		9359E95126B3B771006FDB22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B882BD2E5D98306280DAF1B /* Pods-ImageMachine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,19 +623,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9359E94426B3B770006FDB22 /* ImageMachine.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9359E94526B3B770006FDB22 /* ImageMachine.xcdatamodel */,
-			);
-			currentVersion = 9359E94526B3B770006FDB22 /* ImageMachine.xcdatamodel */;
-			path = ImageMachine.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9359E93026B3B770006FDB22 /* Project object */;
 }

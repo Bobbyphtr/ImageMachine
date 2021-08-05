@@ -9,16 +9,21 @@ import UIKit
 
 class MachineListTableViewCell: UITableViewCell {
     
-    var model : MachineListDataModel? {
+    var model : MachineListViewData? {
         didSet {
-            self.nameLabel.text = model?.machineName
+            self.nameLabel.text = model?.name
+            self.typeNameLabel.text = model?.type
+            self.machineID = model?.id
         }
     }
     
     @IBOutlet weak var cardBackground: UIView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var typeNameLabel: UILabel!
     
     static let identifier = "MachineListCell"
+    
+    var machineID : String!
 
     override func awakeFromNib() {
         super.awakeFromNib()

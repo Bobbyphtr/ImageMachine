@@ -7,19 +7,25 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
-class ImageMachine {
-    var id : Int!
-    var name : String?
-    var type : String?
-    var qrCodeNumber : Int?
-    var lastMaintenance : Date?
+class ImageMachine : Object {
+    @Persisted(primaryKey: true) var _id : String = UUID().uuidString
+    @Persisted var name : String? = nil
+    @Persisted var type : String? = nil
+    @Persisted var qrCodeNumber : Int = Int.random(in: 0...9999)
+    @Persisted var lastMaintenance : Date? = nil
+    
+    @Persisted var imagePaths : List<String> = List<String>()
     
     var images : [UIImage] = []
     
-    init(name : String, type : String, images : [UIImage]) {
+    convenience init(name : String, type : String, images : [UIImage]) {
+        self.init()
+
         self.name = name
         self.type = type
         self.images = images
+        self.lastMaintenance = Date()
     }
 }

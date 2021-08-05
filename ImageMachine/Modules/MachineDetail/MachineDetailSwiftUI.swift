@@ -9,21 +9,7 @@ import SwiftUI
 
 struct MachineDetailSwiftUI: View {
     
-    @State private var maintenanceDate : Date = Date()
-    //    {
-    //        get {
-    //            let date = Date()
-    //            let formatter = DateFormatter()
-    //            formatter.dateFormat = "dd MMMM yyyy HH:mm"
-    //            return formatter.string(from: date)
-    //        }
-    //    }
-    
-    @State private var id : String = "123456789"
-    @State private var type : String = "this is a type"
-    @State private var qrCodeNumber : String = "987654321"
-    
-    @EnvironmentObject var machineModel : MachineDetailsObservable
+    @ObservedObject var machineModel : MachineDetailViewModel
     
     let columns = [
         GridItem(.flexible()),
@@ -33,29 +19,27 @@ struct MachineDetailSwiftUI: View {
     ]
     
     var body: some View {
-        //        NavigationView(content: {
         VStack {
             Form(content: {
                 Section(header: Text("Information")) {
                     HStack(content: {
                         Text("ID")
                         Spacer()
-                        Text("\(id)")
+                        Text("\(machineModel.id)")
                     })
                     HStack(content: {
                         Text("Type")
                         Spacer()
-                        Text("\(type)")
+                        Text("\(machineModel.type)")
                     })
                     HStack(content: {
                         Text("QR Code Number")
                         Spacer()
-                        Text("\(qrCodeNumber)")
+                        Text("\(machineModel.qrCodeNumber)")
                     })
                 }
-                
                 Section(header: Text("Last Maintenance")) {
-                    DatePicker("Date Time", selection: $maintenanceDate, in: ...Date())
+                    DatePicker("Date Time", selection: $machineModel.maintenanceDate, in: ...machineModel.maintenanceDate)
                         .disabled(true)
                         .datePickerStyle(CompactDatePickerStyle())
                 }
@@ -64,7 +48,7 @@ struct MachineDetailSwiftUI: View {
                     HStack {
                         Spacer()
                         Button("Pick Machine Images") {
-                            print("Pick Images")
+                            machineModel.showImagePicker()
                         }
                         .font(Font.system(size: 16, weight: .medium, design: .rounded))
                         .padding()
@@ -75,43 +59,39 @@ struct MachineDetailSwiftUI: View {
                     }.padding()
                     
                     LazyVGrid(columns: columns, content: {
-                        ForEach(0...20, id: \.self) { _ in
-                            ImageCell(image: UIImage.init(systemName: "person")!)
+                        ForEach(0..<machineModel.thumbnailImages.value.count, id: \.self) { index in
+                            ImageCell(image: machineModel.thumbnailImages.value[index], index: index)
+                                .onTapGesture {
+                                    machineModel.showImage(index: index)
+                                }
                         }
                     })
                     .padding()
-                    
                 }
+                
                 Button("Delete Machine") {
-                    print("Delete")
+                    machineModel.deleteMachine()
                 }.foregroundColor(.red)
                 
             }).listStyle(GroupedListStyle())
         }
         .navigationBarTitle(
-            "\(machineModel.data.name ?? "")",
+            "\(machineModel.name)",
             displayMode: .large
         )
         .navigationViewStyle(DefaultNavigationViewStyle())
         .toolbar(content: {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 Button(action: {
-                    print("Edit")
+                    machineModel.editMachine()
                 }, label: {
                     Image(uiImage: UIImage(systemName: "square.and.pencil")!)
                 })
             }
         })
+        .onAppear {
+            machineModel.updateMachine()
+        }
         Spacer()
-    }
-}
-
-class MachineDetailsObservable : ObservableObject {
-    @Published var data : ImageMachine!
-}
-
-struct MachineDetailSwiftUI_Previews: PreviewProvider {
-    static var previews: some View {
-        MachineDetailSwiftUI()
     }
 }
